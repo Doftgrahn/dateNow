@@ -29,8 +29,8 @@ export class List1Component implements OnInit {
     this.dateToggle = 2
   }
 
-  onlyMonths(){
-    this.dateToggle=3
+  onlyMonths() {
+    this.dateToggle = 3
   }
 
 

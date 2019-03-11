@@ -6,8 +6,6 @@
     <button (click)="onlyMonths()" [ngClass]="{'active': dateToggle == 3}">Only Months</button>
     <button (click)="onlyYear()" [ngClass]="{'active': dateToggle == 2}">Only Year</button>
 
-
-
   </div>
   <ng-container *ngIf="dateToggle==0">
     <p *ngFor="let data of dataArray">{{ data | date: 'yyyy-MM-dd' }}</p>
