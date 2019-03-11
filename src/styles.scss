@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text');
+@import "./app/variables";
+
+* {
+  box-sizing: border-box;
+}
+
+app-list1{
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  color: $color-letters;
+  font-family: 'Roboto Mono', monospace;
+  margin:0;
+}
+
+
+input,
+p,
+span {
+  font-family: 'Markazi Text', serif;
+  font-size: 20px;
+  color:$color-letters;
+  margin:0;
+}
+
+body {
+  background-image: url("./assets/pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+section {
+  border-radius: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $regular-spacing;
+  max-width: $width;
+  background-color: $color-background;
+  border: 30px solid $color-blue;
+  flex-wrap: wrap;
+}

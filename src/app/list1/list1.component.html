@@ -1,0 +1,10 @@
+<section>
+
+<div>
+  <button (click)="onlyDates()">Only Dates</button>
+  <button>Only Time</button>
+  <button>Time and Dates</button>
+</div>
+
+<p *ngFor="let data of dataArray">{{data|date: 'yyyy-MM-dd'}}</p>
+</section>
