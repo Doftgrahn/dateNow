@@ -24,8 +24,13 @@ export class List1Component implements OnInit {
   onlyDates() {
     this.dateToggle = 1;
   }
+
   onlyYear() {
     this.dateToggle = 2
+  }
+
+  onlyMonths(){
+    this.dateToggle=3
   }
 
 
