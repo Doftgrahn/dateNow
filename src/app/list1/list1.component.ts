@@ -8,14 +8,13 @@ import { ListitemService } from '../listitem.service';
   styleUrls: ['./list1.component.scss']
 })
 export class List1Component implements OnInit {
-
-  dataArray: Date[];
-
   constructor(listItemService: ListitemService) {
     this.dataArray = listItemService.data;
   }
 
   dateToggle: number = 0;
+  dataArray: Date[];
+
 
   showAll() {
     this.dateToggle = 0;
@@ -32,9 +31,6 @@ export class List1Component implements OnInit {
   onlyMonths() {
     this.dateToggle = 3
   }
-
-
-
 
 
   ngOnInit() { }

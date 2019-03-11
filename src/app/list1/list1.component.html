@@ -5,8 +5,8 @@
     <button (click)="onlyDates()" [ngClass]="{'active': dateToggle == 1}">Only Dates</button>
     <button (click)="onlyMonths()" [ngClass]="{'active': dateToggle == 3}">Only Months</button>
     <button (click)="onlyYear()" [ngClass]="{'active': dateToggle == 2}">Only Year</button>
-
   </div>
+
   <ng-container *ngIf="dateToggle==0">
     <p *ngFor="let data of dataArray">{{ data | date: 'yyyy-MM-dd' }}</p>
   </ng-container>
@@ -19,5 +19,4 @@
   <ng-container *ngIf="dateToggle==3">
     <p *ngFor="let data of dataArray"> {{ data | date: 'dd' }} </p>
   </ng-container>
-
 </section>
