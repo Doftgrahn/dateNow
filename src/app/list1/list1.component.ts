@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ListitemService} from '../listitem.service';
+import { ListitemService } from '../listitem.service';
+
 
 @Component({
   selector: 'app-list1',
@@ -8,26 +9,29 @@ import {ListitemService} from '../listitem.service';
 })
 export class List1Component implements OnInit {
 
-dataArray:Date[];
+  dataArray: Date[];
 
-
-constructor(listItemService:ListitemService) {
-this.dataArray = listItemService.data;
+  constructor(listItemService: ListitemService) {
+    this.dataArray = listItemService.data;
   }
 
+  dateToggle: number = 0;
+
+  showAll() {
+    this.dateToggle = 0;
+  }
 
   onlyDates() {
-
-    let showDates = this.dataArray;
-    console.log(showDates.getDate())
-
-     console.log('Funkar det?', this.dataArray)
+    this.dateToggle = 1;
+  }
+  onlyYear() {
+    this.dateToggle = 2
   }
 
 
 
 
 
-  ngOnInit() {}
+  ngOnInit() { }
 
 }

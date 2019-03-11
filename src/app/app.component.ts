@@ -16,5 +16,5 @@ export class AppComponent {
       this.today = Date.now();
     }, 1000);
   }
-  
+
 }
