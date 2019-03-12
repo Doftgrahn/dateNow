@@ -10,11 +10,11 @@ import { ListitemService } from '../listitem.service';
 export class List1Component implements OnInit {
   constructor(listItemService: ListitemService) {
     this.dataArray = listItemService.data;
+    console.log(this.dataArray.length)
   }
 
   dateToggle: number = 0;
   dataArray: Date[];
-
 
   showAll() {
     this.dateToggle = 0;

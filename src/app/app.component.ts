@@ -6,15 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  today: number;
-  title: string = 'Övningar!';
-
+  
 
   constructor() {
 
-    setInterval(() => {
-      this.today = Date.now();
-    }, 1000);
+
+
   }
 
 }
